@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "target": "es2019", // Compatible with node v10
+    "module": "esnext", // When building node libs without a bundler use `commonjs`
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["node_modules/*"],
+      "##/*": ["src/*"]
+    },
+    "skipLibCheck": true
+  },
+  "include": ["index.d.ts", "src"],
+  "exclude": ["node_modules", "dist"]
+}
