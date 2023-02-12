@@ -1,12 +1,14 @@
-import twitterLogo from "##/icons/Twitter-logo.svg";
+import { TwitterLogo } from "##/icons/Twitter-logo";
+
 export const Loader = ({ showLoader }: { showLoader: boolean }) => {
   return (
     <div
       className={`${
         showLoader ? "hidden" : ""
       } absolute flex justify-center items-center w-screen h-screen`}
+      data-testid="twitter-logo-loader"
     >
-      <img src={twitterLogo} className="w-16 h-16" alt="twitter-logo" />
+      <TwitterLogo className="w-16 h-16" />
     </div>
   );
 };

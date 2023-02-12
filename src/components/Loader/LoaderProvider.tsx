@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 import { LoaderContextInterface } from "./types";
 import { LoaderQueue } from "./LoaderQueue";
 import Loader from "./Loader";
